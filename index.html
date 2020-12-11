@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">Adrian Yonam</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+
+            <h1 class="display-4">ADRIAN YONAM LOVARI MINGGU</h1>
+            <p>Mahasiswa Teknik Informatika - D121181505 </p>
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Pengertian Mesin Turing
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p> Mesin Turing adalah Model yang sangat sederhana dari Komputer, Mesin turing itu bisa juga dibilang Sebuah Model Matematika untuk Komputasi diberikan dalam bentuk Mesin turing itu sendiri.
+                </p>
+                <p>Mesin Turing terkenal dengan ungkapan " Apapun yang bisa dilakukan oleh Mesin Turing pasti bisa dilakukan oleh komputer."
+                </p>
+                <p> Mesin Turing menggunakan notasi seperti ID-ID pada PDA untuk menyatakan konfigurasi dari komputasinya. Stack pada PDA memiliki keterbatasan akses. Elemen yang dapat diakses hanya elemen yang ada pada top stack. Pada Mesin Turing, memori
+                    akan berupa suatu tape yang pada dasarnya merupakan array dari sel-sel penyimpanan." Visualisasi dari sebuah mesin Turing diberikan oleh gambar berikut:</p>
+                <p>
+                    <center><img src="img/1.png" width="400"></center>
+                </p>
+                <P> Mesin terdiri dari sebuah finite control, yang dapat berada dalam sebuah himpunan berhingga dari state. Terdapat sebuah tape yang dibagi ke dalam kotak-kotak atau sel-sel. Setiap sel dapat menampung sebuah dari sejumlah berhingga dari
+                    simbol. Pada awalnya, input yang merupakan string dari simbol dengan panjang berhingga dipilih dari input alphabet, ditempatkan pada tape. Sel-sel tape yang lain, perluasan secara infinite ke kiri dan ke kanan, pada awalnya menampung
+                    simbol khusus yang dinamakan blank. Blank bukan sebuah input symbol, dan mungkin terdapat simbol tape yang lain disamping input symbol dan blank. Terdapat sebuah tape head yang selalu ditempatkan pada salah satu dari sel-sel tape.
+                    Mesin turing dikatakan men-scan sel tersebut. Pada awalnya, tape head berada pada sel paling kiri yang menampung input. Sebuah pergerakan mesin Turing adalah sebuah fungsi dari state dari finite control dan tape symbol yang di-scan.</P>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Spesifikasi Mesin Turing
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <center>
+                        <h6>- Mesin Turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah simbol tunggal</h6>
+                        <h6> Mesin Turing juga memiliki Head fungsinya Sebagai Penunjuk Posisi yang diakses oleh Pita</h6>
+                        <h6>- Head pada Mesin Turing juga dapat bergerak ke-kanan dan ke-kiri pada pita sesuai fungsi transisi yang ditetapkan untuk membaca inputan</h6>
+                        <h6>- Head juga Mampu melakukan tugas untuk menghapus dan mengubah isi dari Pita</h6>
+                    </center>
+                </p>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Diagram Transisi untuk Mesin Turing
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Diagram transisi terdiri dari sebuah himpunan dari node–node yang menyatakan state–state dari Mesin Turing .sebuah arc dari state q ke state p diberi label oleh satu atau lebih item dengan bentuk X/Y D, dimana X dan Y adalah tape symbol,
+                    dan D adalah arah, kiri (L) atau kanan (R). Bahwa bila d(q, X) = (p, Y, D) diperoleh label X/Y D pada arc dari q ke p. Dalam diagram arah D dinyatakan dengan tanda ¬ untuk “left” dan ® untuk “right”. Start state ditandai dengan kata
+                    “start” dan sebuah panah yang masuk ke dalam state tersebut. Final state ditandai dengan putaran ganda.</p>
+                <p>Contoh :</p>
+                <p>Mesin Turing berikut menghitungan fungsi , yang dinamakan monus atau proper substraction. Fungsi ini didefinisikan oleh m n = max(m – n, 0). Bahwa, m n = m – n jika m ³ n dan 0 jika m
+                    < n. Mesin Turing yang melakukan operasi ini adalah M=( {q0, q1, … , q6}, {0, 1}, {0, 1, B}, d, q0, B) Aturan untuk fungsi transisi d: </p>
+                        <p>
+                            <center><img src="img/2.png" width="400"></center>
+                        </p>
+                        <p>Diagram transisi dari mesin Turing M:</p>
+                        <p>
+                            <center><img src="img/3.png" width="400"></center>
+                        </p>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h1>Contoh Mesin Turing Sederhana
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Sebuah contoh mesin Turing dapat dibangun untuk melakukan komputasi sederhana yang didefinsikan seperti ini:</p>
+                                    <p>Tentukan ada berapa angka 1 dalam sebuah string berbentuk 0111...110 (rangkaian angka 1 yang didahului dengan 0 dan diakhiri juga dengan 0), apakah berjumlah genap atau berjumlah ganjil.</p>
+                                    <p>ika angka 1 di antara dua angka 0 berjumlah genap, tulis sebuah angka 0 pada salah satu sel dari tape mesin Turing.</p>
+                                    <p>Jika angka 1 di antara dua angka 0 berjumlah ganjil, tulis sebuah angka 1 pada salah satu sel dari tape mesin Turing.
+                                    </p>
+                                    <p>Untuk menyelesaikan masalah komputasi ini, kita buat tiga buah State bagi mesin Turing ini, yaitu Start, Even, dan Odd. Di samping itu kita buat sekumpulan aturan Transisi yang digunakan oleh mesin Turing ini untuk
+                                        melakukan proses komputasinya. Aturan-aturan Transisi tersebut dapat dituliskan demikian:</p>
+
+                                    <p>
+
+                                        <h6>- - Jika mesin Turing berada pada status Start, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi status Even, Ganti simbol 0 pada Tape dengan Blank (atau Hapus simbol 0 pada Tape), dan
+                                            Bergerak ke kanan satu sel.</h6>
+                                        <h6> - Jika mesin Turing berada pada status Even, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi status Odd, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</h6>
+                                        <h6>- Jika mesin Turing berada pada status Odd, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi Even, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.
+                                        </h6>
+                                        <h6>- Jika mesin Turing berada pada status Even, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 0, dan tetap pada sel tersebut (tidak perlu berpindah
+                                            ke kiri maupun ke kanan).</h6>
+                                        <h6>- Jika mesin Turing berada pada status Odd, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 1, dan tetap pada sel tersebut.
+                                        </h6>
+
+                                    </p>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
